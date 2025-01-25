@@ -4,5 +4,5 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - https://github.com/Luodian/Otter
-  - https://github.com/EvolvingLMMs-Lab/lmms-eval
+  - Luodian/Otter
+  - EvolvingLMMs-Lab/lmms-eval
