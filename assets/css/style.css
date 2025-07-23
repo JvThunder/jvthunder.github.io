@@ -376,6 +376,11 @@ svg#scroll-down:hover circle {
     transition: height var(--default-duration) ease;
 }
 
+.skill__notes li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 .skill__tool {
     margin-top: var(--margin-1);
 }

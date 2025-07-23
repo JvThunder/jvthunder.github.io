@@ -49,12 +49,9 @@ let skills = [
       "Co-authored 'Otter', a vision-language model inspired by Flamingo, accepted in IEEE TPAMI.",
       "Contributed to LMMS-Eval, a distributed LLM evaluation framework, accepted at NAACL 2025.",
       "Built multimodal image retrieval models using BLIP and Vision Transformers; tested on FashionIQ and CIRR.",
-      "Worked on Offline RL for diabetes treatment optimization; implemented DQN, DRQN, DRQN-EWC, and Mixture-of-Experts.",
-      "Converted MIMIC-III dataset from BigQuery to PostgreSQL and Pandas DataFrames.",
       "Created a Gymnasium-compatible Offline RL environment and evaluation pipeline for medical datasets.",
       "Trained and deployed saliency-based models for IC hardware segmentation using U-Net, ViT, and Swin Transformer.",
       "Developed diffusion planners for motion planning in MuJoCo and deployed on real robots using ROS.",
-      "Tested POMDP solvers such as QuickPOMDP and POMCP in PyJulia.",
     ],
   },
   {
@@ -125,17 +122,16 @@ function skillComponent({ skillTitle, skillText, icon, notes }) {
                 <i class="ri-arrow-down-s-line subtitle-es arrow"></i>
             </div>
             <div class="skill__body accordion__content">
+            <ul class="skill__notes d-flex f-column r-gap-1">
 
             ${notes
       .map((tool) => {
         return `
-                <div class="group d-flex justify-between">
-                  * ${tool}
-                </div>
+                  <li>${tool}</li>
               `;
       })
       .join("")}
-
+        </ul>
             </div>
         </div>
     `;
