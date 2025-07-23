@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+    <!-- ============= Theme ============= -->
+    <script src="./assets/js/theme.js"></script>
+
+    <script>
+        const theme = new Theme("light");
+        theme.init();
+    </script>
+
+    <!-- ============= Remixicon ============= -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- ============= SwiperJS Stylesheet ============= -->
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
+    <!-- ============= CSS Stylesheet ============= -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- ============= SwiperJS ============= -->
+    <script src="./assets/js/swiper.js"></script>
+    <!-- ============= ScrollRevealJS ============= -->
+    <script src="./assets/js/scrollReveal.js"></script>
+    <!-- ============= EmailJS ============= -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- ============= JavaScript ============= -->
+    <script src="./assets/js/script.js" defer></script>
+    <title>Portfolio | CodingWeb</title>
+</head>
+
+<body>
+    <!-- ============= Header ============= -->
+    <header class="header d-flex align-center">
+        <nav class="header__container container d-flex justify-between align-center">
+            <div class="header__logo">
+                <a href="./"><img src="./assets/images/icon.png" alt="logo" />
+            </div>
+            <div class="group d-flex align-center">
+                <ul class="header__links d-flex">
+                    <li class="header__link body-md"><a href="#home">Home</a></li>
+                    <li class="header__link body-md"><a href="#about">About</a></li>
+                    <li class="header__link body-md"><a href="./assets/files/resume.pdf">Resume</a></li>
+                    <li class="header__link body-md"><a href="#skills">Skills</a></li>
+                    <li class="header__link body-md"><a href="#experience">Experience</a></li>
+                    <li class="header__link body-md"><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li class="header__link body-md"><a href="#project">Project</a></li> -->
+                    <li class="header__link body-md"><a href="#contact">Contact</a></li>
+                    <li class="header__link body-md"><a href="https://blog.jvthunder.org/">Blog</a></li>
+                </ul>
+                <div class="color-theme body-md d-flex align-center justify-center">
+                    <i class="ri-moon-fill"></i>
+                </div>
+            </div>
+
+            <div class="header__links-mobile justify-center align-center">
+                <ul class="d-flex align-center justify-center">
+
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#home" class="d-flex align-center justify-center active">
+                            <i class="ri-home-5-fill"></i>
+                            <p>home</p>
+                        </a>
+                    </li>
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#about" class="d-flex align-center justify-center">
+                            <i class="ri-user-3-fill"></i>
+                            <p>about</p>
+                        </a>
+                    </li>
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#skills" class="d-flex align-center justify-center">
+                            <i class="ri-medal-fill"></i>
+                            <p>skills</p>
+                        </a>
+                    </li>
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#experience" class="d-flex align-center justify-center">
+                            <i class="ri-briefcase-fill"></i>
+                            <p>experience</p>
+                        </a>
+                    </li>
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#portfolio" class="d-flex align-center justify-center">
+                            <i class="ri-stack-fill"></i>
+                            <p>portfolio</p>
+                        </a>
+                    </li>
+                    <!-- <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#project" class="d-flex align-center justify-center">
+                            <i class="ri-customer-service-2-fill"></i>
+                            <p>project</p>
+                        </a>
+                    </li> -->
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="#contact" class="d-flex align-center justify-center">
+                            <i class="ri-send-plane-fill"></i>
+                            <p>contact</p>
+                        </a>
+                    </li>
+                    <li class="header__link-mobile d-flex align-center justify-center">
+                        <a href="https://blog.jvthunder.org/" class="d-flex align-center justify-center">
+                            <i class="ri-book-open-fill"></i>
+                            <p>blog</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============= Home Section ============= -->
+    <section id="home" class="home d-flex align-center">
+        <div class="home__container container d-flex align-center">
+            <div class="home__content d-flex align-center justify-between">
+                <div class="home__left-side d-flex f-column r-gap-2">
+                    <div class="group d-flex f-column">
+                        <h1 class="home__title heading-1">Hi I'm Joshua Adrian</h1>
+                        <p class="home__subtitle subtitle-lg">I'm a <span>Data Science and AI Undergraduate</span></p>
+                        <p class="home__text body-es">
+                            ASEAN Scholar in Nanyang Technological University
+                        </p>
+                    </div>
+                    <div class="home__social-links d-flex c-gap-1">
+
+                        <a href="https://sg.linkedin.com/in/joshua-ac" class="home__social-link subtitle-es">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="https://github.com/JvThunder" class="home__social-link subtitle-es">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                    <a href="#contact" class="btn btn-primary d-flex align-center c-gap-1">
+                        Contact me <i class="ri-send-plane-fill"></i>
+                    </a>
+                </div>
+                <div class="home__right-side">
+                    <div class="home__image d-flex justify-end">
+                        <img src="./assets/images/joshuaac.jpg" alt="Profile image">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down-btn">
+                <svg id="scroll-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.02 22.74" width="20">
+                    <rect x="1" y="1" width="11.02" height="20.74" rx="5.51" ry="5.51" fill="#fff" stroke="#1b7be2"
+                        stroke-miterlimit="10" stroke-width="2" />
+                    <circle cx="6.51" cy="8.14" r="1.47" fill="#1b7be2" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============= About Section ============= -->
+
+    <section id="about" class="about">
+        <div class="section__title">
+            <h2 class="heading-2">
+                About Me
+            </h2>
+        </div>
+        <div class="about__container container">
+            <div class="about__content d-flex justify-between align-center gap-2">
+                <div class="about__left-side d-flex">
+                    <div class="about__image">
+                        <img src="./assets/images/joshua-about.jpg" alt="about image">
+                    </div>
+                </div>
+
+                <div class="about__right-side d-flex f-column r-gap-2">
+                    <div class="group">
+                        <p class="about__title subtitle-lg">
+                            I'm <span>Joshua Adrian Cahyono</span>
+                        </p>
+                        <p class="about__text body-es">
+                            I'm a curious student and a huge fan of all things Machine Learning.
+                            I love diving into new ideas in math, CS, and AI, especially LLM agents, multi-agent
+                            systems, robotics and AI safety & security.
+                            My north star? Do the important, not the impressive. I'm here to learn, build, and
+                            use tech to make a real difference in the world.
+                        </p>
+                    </div>
+                    <div class="group d-flex align-center gap-1 f-wrap">
+                        <!-- <div class="about__info d-flex align-center c-gap-1">
+                            <h4 class="heading-4">1K+</h4>
+                            <p class="body-es">follower</p>
+                        </div>
+                        <div class="about__info d-flex align-center c-gap-1">
+                            <h4 class="heading-4">500+</h4>
+                            <p class="body-es">Connection</p>
+                        </div> -->
+
+                    </div>
+                    <a href="./assets/files/resume.pdf" download=""
+                        class="btn btn-primary d-flex align-center c-gap-1">Download CV <i
+                            class="ri-download-2-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= Skills Section ============= -->
+    <section id="skills" class="skills">
+        <div class="section__title">
+            <h2 class="heading-2">Skills</h2>
+        </div>
+        <div class="skills__container container">
+            <div class="skills__content d-flex f-column">
+                <!-- Skill -->
+                <div class="skills__skills-tools" id="skillsANDtools">
+                    <div class="skills__subtitle">
+                        <p class="subtitle-md">Skills List</p>
+                    </div>
+                    <div class="skills__items d-flex f-wrap justify-between r-gap-2"></div>
+                </div>
+
+                <!-- Education & Experience -->
+
+                <div class="skills__edu-exp" id="experience">
+                    <div class="skills__subtitle">
+                        <p class="subtitle-md">Experience</p>
+                    </div>
+                    <div class="skills__wrapper d-flex justify-between gap-2">
+                        <div class="skills__edu timeline">
+                            <p class="timeline__title subtitle-sm">&nbsp;</p>
+                            <div class="timeline__items d-flex f-column r-gap-2" id="edu">
+
+                            </div>
+                        </div>
+                        <div class="skills__exp timeline">
+                            <p class="timeline__title subtitle-sm">&nbsp;</p>
+                            <div class="timeline__items d-flex f-column r-gap-2" id="exp">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= Portfolio Section ============= -->
+    <section id="portfolio" class="portfolio">
+        <div class="section__title">
+            <h2 class="heading-2">Portfolio</h2>
+        </div>
+        <div class="portfolio__container container">
+            <div class="portfolio__content d-flex f-wrap gap-2 justify-center">
+                <div class="project">
+                    <div class="project__image">
+                        <img src="./assets/images/otter.png" alt="Otter Chatbot">
+                    </div>
+                    <div class="project__details">
+                        <div class="project__title body-md">Otter</div>
+                        <div class="project__subtitle body-es">Multimodal Chatbot</div>
+                    </div>
+                    <a href="https://github.com/EvolvingLMMs-Lab/Otter" class="project__link" target="_blank"><i
+                            class="ri-share-box-line"></i></a>
+                </div>
+                <div class="project">
+                    <div class="project__image">
+                        <img src="./assets/images/lmms-eval.png" alt="LLMs Evaluation Platform">
+                    </div>
+                    <div class="project__details">
+                        <div class="project__title body-md">LLMs-Eval</div>
+                        <div class="project__subtitle body-es">Evaluation Framework</div>
+                    </div>
+                    <a href="https://github.com/EvolvingLMMs-Lab/lmms-eval" class="project__link" target="_blank"><i
+                            class="ri-share-box-line"></i></a>
+                </div>
+                <div class="project">
+                    <div class="project__image">
+                        <img src="./assets/images/ntumods.png" alt="NTUMods Platform">
+                    </div>
+                    <div class="project__details">
+                        <div class="project__title body-md">NTUMods</div>
+                        <div class="project__subtitle body-es">Course Planning Tool</div>
+                    </div>
+                    <a href="https://www.ntumods.org/" class="project__link" target="_blank"><i
+                            class="ri-share-box-line"></i></a>
+                </div>
+                <div class="project">
+                    <div class="project__image">
+                        <img src="./assets/images/pyphub.png" alt="PYPHub">
+                    </div>
+                    <div class="project__details">
+                        <div class="project__title body-md">PYPHub</div>
+                        <div class="project__subtitle body-es">Exam Sharing Platform</div>
+                    </div>
+                    <a href="https://pyphub.ntuscds.com/" class="project__link" target="_blank"><i
+                            class="ri-share-box-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= Project Section ============= -->
+    <!-- <section id="project" class="services">
+        <div class="section__title">
+            <h2 class="heading-2">Projects</h2>
+        </div>
+        <div class="services__container container">
+            <div class="services__content d-flex f-wrap gap-2 justify-center">
+
+                <div class="service">
+                    <div class="service__image">
+                        <img src="./assets/images/otter.jpg" alt="Otter Chatbot">
+                    </div>
+                    <div class="service__details d-flex f-column r-gap-1">
+                        <div class="service__icon"><i class="ri-robot-2-fill"></i></div>
+                        <div class="group">
+                            <p class="service__title subtitle-es">Otter</p>
+                            <div class="service__more body-sm d-flex align-center">
+                                <p>Read more</p>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btmsheet d-flex f-column">
+                        <span class="service__btmsheet-dragicon"></span>
+                        <p class="service__btmsheet-title body-lg">What I provide?</p>
+                        <p class="service__btmsheet-text body-sm">
+                            Otter is a vision-language chatbot that integrates image and text input to enable seamless
+                            multimodal interaction. Built for fun, learning, and real-world applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service__image">
+                        <img src="./assets/images/llms-eval.jpg" alt="LLMs Evaluation Platform">
+                    </div>
+                    <div class="service__details d-flex f-column r-gap-1">
+                        <div class="service__icon"><i class="ri-bar-chart-box-line"></i></div>
+                        <div class="group">
+                            <p class="service__title subtitle-es">LLMs-Eval</p>
+                            <div class="service__more body-sm d-flex align-center">
+                                <p>Read more</p>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btmsheet d-flex f-column">
+                        <span class="service__btmsheet-dragicon"></span>
+                        <p class="service__btmsheet-title body-lg">What I provide?</p>
+                        <p class="service__btmsheet-text body-sm">
+                            A benchmarking platform for systematically evaluating LLMs across different reasoning tasks,
+                            with plug-and-play support for custom agents and metrics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service__image">
+                        <img src="./assets/images/mario-rl.jpg" alt="Mario RL">
+                    </div>
+                    <div class="service__details d-flex f-column r-gap-1">
+                        <div class="service__icon"><i class="ri-gamepad-fill"></i></div>
+                        <div class="group">
+                            <p class="service__title subtitle-es">Mario RL</p>
+                            <div class="service__more body-sm d-flex align-center">
+                                <p>Read more</p>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btmsheet d-flex f-column">
+                        <span class="service__btmsheet-dragicon"></span>
+                        <p class="service__btmsheet-title body-lg">What I provide?</p>
+                        <p class="service__btmsheet-text body-sm">
+                            A reinforcement learning project where agents learn to play Mario using advanced policy
+                            optimization and exploration strategies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service__image">
+                        <img src="./assets/images/ntumods.jpg" alt="NTUMods">
+                    </div>
+                    <div class="service__details d-flex f-column r-gap-1">
+                        <div class="service__icon"><i class="ri-calendar-event-fill"></i></div>
+                        <div class="group">
+                            <p class="service__title subtitle-es">NTUMods</p>
+                            <div class="service__more body-sm d-flex align-center">
+                                <p>Read more</p>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btmsheet d-flex f-column">
+                        <span class="service__btmsheet-dragicon"></span>
+                        <p class="service__btmsheet-title body-lg">What I provide?</p>
+                        <p class="service__btmsheet-text body-sm">
+                            A clean and simple module planning tool for NTU students. Built to help students compare,
+                            schedule, and manage their course loads more effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="service__image">
+                        <img src="./assets/images/pyphub.jpg" alt="PYPHub">
+                    </div>
+                    <div class="service__details d-flex f-column r-gap-1">
+                        <div class="service__icon"><i class="ri-book-mark-fill"></i></div>
+                        <div class="group">
+                            <p class="service__title subtitle-es">PYPHub</p>
+                            <div class="service__more body-sm d-flex align-center">
+                                <p>Read more</p>
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__btmsheet d-flex f-column">
+                        <span class="service__btmsheet-dragicon"></span>
+                        <p class="service__btmsheet-title body-lg">What I provide?</p>
+                        <p class="service__btmsheet-text body-sm">
+                            Centralized platform for NTU past year papers with collaborative discussion features, and a
+                            future plan to integrate LLM-based automated question-solving.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- ============= licenses Section ============= -->
+    <section class="testimonials">
+        <div class="section__title">
+            <h2 class="heading-2">Certifications</h2>
+        </div>
+        <div class="testimonials__container container">
+            <div class="testimonials__content">
+                <div class="testimonials__slider swiper">
+                    <div class="testimonials__slider-wrapper swiper-wrapper">
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Professional Machine Learning Engineer Certification</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/google.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Jan 2025</p>
+                                    <p class="testimonials__slide-subtitle body-es">Google</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+
+                                <p class="body-sm">ICPC - International Collegiate Programming Contest</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/icpc.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Oct 2024</p>
+                                    <p class="testimonials__slide-subtitle body-es">Credential ID U05ZI687T7VO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+
+                                <p class="body-sm">IBM Quantum Challenge 2024 Achievement</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/ibm_logo.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Jun 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Deep Learning Specialization</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/coursera.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Aug 2023</p>
+                                    <p class="testimonials__slide-subtitle body-es">Credential ID 5PD424K3QACA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">HuggingFace Reinforcement Learning Course</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/huggingface_logo.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Jul 2023</p>
+                                    <p class="testimonials__slide-subtitle body-es">Hugging Face</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Natural Language Processing Specialization</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/coursera.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Jul 2023</p>
+                                    <p class="testimonials__slide-subtitle body-es">Credential ID UB57Q44Q5FP2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Tiktok Tech Immersion 2023</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/tiktok_logo.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Jul 2023</p>
+                                    <p class="testimonials__slide-subtitle body-es">Tiktok</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Reinforcement Learning Specialization</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/coursera.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Jun 2023</p>
+                                    <p class="testimonials__slide-subtitle body-es">Credential ID M6NT54P98WX5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Generative Adversarial Networks (GANs) Specialization</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/coursera.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued May 2023</p>
+                                    <p class="testimonials__slide-subtitle body-es">Credential ID FHV9DCRVN947</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__slide swiper-slide d-flex f-column r-gap-1">
+                            <div class="testimonials__slide-comment">
+                                <p class="body-sm">Applied Data Science Lab</p>
+                            </div>
+                            <div class="group d-flex align-center gap-1">
+                                <div class="testimonials__slide-pic">
+                                    <img src="./assets/images/worldquant_university_logo.jpeg" alt="">
+                                </div>
+                                <div class="group">
+                                    <p class="testimonials__slide-title subtitle-es">Issued Dec 2022</p>
+                                    <p class="testimonials__slide-subtitle body-es">WorldQuant University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__slider-pagination swiper-pagination"></div>
+                </div>
+                <button type="button" class="testimonials__btn-left btn swiper-button-prev"><i
+                        class="ri-arrow-left-s-line"></i></button>
+                <button type="button" class="testimonials__btn-right btn swiper-button-next"><i
+                        class="ri-arrow-right-s-line"></i></button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ============= Contact Section ============= -->
+    <section id="contact" class="contact">
+
+        <div class="section__title">
+            <h2 class="heading-2">contact me</h2>
+        </div>
+        <div class="contact__container container">
+            <div class="contact__content d-flex justify-between f-wrap gap-2">
+                <div class="contact__info-list d-flex f-column gap-2">
+                    <div class="contact__info-item">
+                        <a href="tel:+962 123 456 789" class="d-flex align-center c-gap-2">
+                            <i class="ri-phone-fill heading-3"></i>
+                            <div class="group">
+                                <p class="contact__title heading-4">call me</p>
+                                <p class="contact__subtitle body-es">+65 91346083</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact__info-item">
+                        <a href="mailto:joshuaadrianc@gmail.com" class="d-flex align-center c-gap-2">
+                            <i class="ri-mail-fill heading-3"></i>
+                            <div class="group">
+                                <p class="contact__title heading-4">email</p>
+                                <p class="contact__subtitle body-es">joshuaadrianc@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact__info-item">
+                        <a href="#" class="d-flex align-center c-gap-2">
+                            <i class="ri-map-pin-fill heading-3"></i>
+                            <div class="group">
+                                <p class="contact__title heading-4">location</p>
+                                <p class="contact__subtitle body-es">Singapore</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="form" id="contact-form">
+                    <div class="group d-flex gap-2 f-column">
+                        <div class="group d-flex gap-2 align-center f-wrap">
+                            <div class="form__group">
+                                <label for="name" class="form__label body-es">
+                                    name
+                                </label>
+                                <input type="text" name="user_name" id="name" class="input-primary form__input"
+                                    autocomplete="off" required />
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label body-es">
+                                    email
+                                </label>
+                                <input type="text" name="user_email" id="email" class="input-primary form__input"
+                                    autocomplete="off" required />
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" class="form__label body-es">
+                                subject
+                            </label>
+                            <input type="text" name="user_subject" id="subject" class="input-primary form__input"
+                                autocomplete="off" required />
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label body-es">
+                                message
+                            </label>
+                            <textarea type="text" name="user_message" id="message" class="input-primary form__input"
+                                autocomplete="off" required></textarea>
+                        </div>
+                        <div class="form__status-box">
+                            <p class="body-es"></p>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary d-flex align-center c-gap-1">Contact
+                            me <i class="ri-send-plane-fill"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= Footer ============= -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content d-flex justify-between">
+                <div class="group">
+                    <h3 class="footer__title heading-3">Joshua</h3>
+                    <p class="footer__subtitle body-sm">Data Science and AI Developer</p>
+                </div>
+                <div class="footer__social-links d-flex c-gap-1">
+                    <a href="https://www.instagram.com/joshuaac0716/" class="footer__social-link subtitle-es">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/joshua-ac" class="footer__social-link subtitle-es">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="https://github.com/JvThunder" class="footer__social-link subtitle-es">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://x.com/joshuaac0716" class="footer__social-link subtitle-es">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="https://youtube.com/@accoder7521?si=NpJaI9_EA9ttHndf"
+                        class="footer__social-link subtitle-es">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                    <a href="mailto:joshuaadrianc@gmail.com" class="footer__social-link subtitle-es">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                    <a href="https://blog.jvthunder.org/" class="footer__social-link subtitle-es">
+                        <i class="ri-blogger-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyRight">
+            <p class="body-sm">&copy; 2025 <span>Joshua</span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- ============= Scroll Up ============= -->
+    <button type="button" class="btn btn-primary scroll-up d-flex align-center justify-center"><i
+            class="ri-arrow-up-line"></i></button>
+</body>
+
+</html>
